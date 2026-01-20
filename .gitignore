@@ -1,0 +1,21 @@
+# Node modules folder (don't upload your dependencies)
+node_modules/
+
+# Environment variables (keep secrets safe)
+.env
+
+# Logs (auto-generated)
+logs/
+*.log
+
+# OS-specific files (not needed in repo)
+.DS_Store
+Thumbs.db
+
+# Optional: Build folders or temporary files
+dist/
+tmp/
+*.tmp
+
+# VS Code workspace settings (optional)
+.vscode/

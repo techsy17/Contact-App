@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Contact</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<%- include('partials/header', { pageTitle: 'Add New Contact', pageSubtitle: 'Fill the form below to add contact' }) %>
+
+<form action="/add" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name" placeholder="Enter your name" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" name="phone" placeholder="Enter phone number" required>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" placeholder="Enter email">
+
+    <button type="submit">Save Contact</button>
+</form>
+
+<%- include('partials/footer') %>
+
+</body>
+</html>
