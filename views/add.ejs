@@ -9,7 +9,7 @@
 <body>
 <%- include('partials/header', { pageTitle: 'Add New Contact', pageSubtitle: 'Fill the form below to add contact' }) %>
 
-<form action="/add" method="post">
+<form action="/api/add" method="post">
     <label for="name">Name:</label>
     <input type="text" name="name" placeholder="Enter your name" required>
 

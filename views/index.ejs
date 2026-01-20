@@ -18,10 +18,10 @@
             <p>✉️ <%= contact.email %></p>
 
             <div class="card-buttons">
-                <a href="/edit/<%= contact._id %>">Edit</a>
+                <a href="api/edit/<%= contact._id %>">Edit</a>
 
                 <!-- IMPORTANT CLASS -->
-                <form action="/delete/<%= contact._id %>?_method=DELETE"
+                <form action="/api/delete/<%= contact._id %>?_method=DELETE"
                       method="post"
                       class="delete-form">
                     <button type="submit">Delete</button>

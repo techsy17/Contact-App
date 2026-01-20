@@ -20,7 +20,7 @@ router.post('/add',async(req,res)=>{
     await Contacts.create({ name :req.body.name,
         phone : req.body.phone,
         email : req.body.email});
-    res.redirect('/');
+    res.redirect('/api');
 })
 
 
@@ -28,7 +28,7 @@ router.post('/add',async(req,res)=>{
 router.delete('/delete/:id', async (req, res) => {
     console.log('Delete contact Id: ',req.params.id);
     await Contacts.findByIdAndDelete(req.params.id);
-    res.redirect('/');
+    res.redirect('/api');
 
 });
 
@@ -44,9 +44,8 @@ router.get('/edit/:id',async(req,res)=>{
 // Update contact from database 
 router.put('/edit/:id',async(req,res)=>{
     await Contacts.findByIdAndUpdate(req.params.id,{$set:req.body});
-    res.redirect('/');
+    res.redirect('/api');
 })
-
 
 
 module.exports = router;
