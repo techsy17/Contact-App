@@ -19,3 +19,6 @@ tmp/
 
 # VS Code workspace settings (optional)
 .vscode/
+
+# Local Netlify folder
+.netlify

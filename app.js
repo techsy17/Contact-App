@@ -39,7 +39,10 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
-app.use(express.static('public'));
+// app.use(express.static('public'));
+// const path = require('path');
+// app.use(express.static(path.join(__dirname, 'public')));
+
 
 // MongoDB connection (cached)
 let isConnected = false;
